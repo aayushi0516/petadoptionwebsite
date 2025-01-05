@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Hearts Pet Adoption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="brand">Paws & Hearts</h1>
+            <div class="menu">
+                <button class="tab-btn" data-tab="about-us">About Us</button>
+                <button class="tab-btn" data-tab="available-pets">Available Pets</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="tab-content" id="about-us">
+        <div class="content-container">
+            <h2>About Us</h2>
+            <p>Welcome to Paws & Hearts! We help connect loving families with pets in need.</p>
+        </div>
+    </div>
+
+    <div class="tab-content hidden" id="available-pets">
+        <div class="content-container">
+            <h2>Available Pets</h2>
+            <div class="search-section">
+                <select>
+                    <option>Any Animal</option>
+                    <option>Dogs</option>
+                    <option>Cats</option>
+                    <option>Other Pets</option>
+                </select>
+                <button>Search</button>
+            </div>
+            <p>Find your new friend from our available options!</p>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

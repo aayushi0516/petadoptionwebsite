@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2563eb; /* Blue */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .menu button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.navbar .menu button:hover {
+    text-decoration: underline;
+}
+
+/* Tabs and Content */
+.tab-content {
+    padding: 2rem;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search-section select, .search-section button {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Pets</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="search.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Hero Section -->
+    <div class="bg-blue-500 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Find Your Perfect Companion</h2>
+            <p class="text-xl mb-8">Give a loving home to pets in need</p>
+            <button class="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100" id="browse-btn">
+                Browse Available Pets
+            </button>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="container mx-auto py-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-4">Find Your New Friend</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <select class="p-2 border rounded">
+                    <option>Any Animal</option>
+                    <option>Dogs</option>
+                    <option>Cats</option>
+                    <option>Other Pets</option>
+                </select>
+                <select class="p-2 border rounded">
+                    <option>Any Age</option>
+                    <option>Baby</option>
+                    <option>Young</option>
+                    <option>Adult</option>
+                    <option>Senior</option>
+                </select>
+                <select class="p-2 border rounded">
+                    <option>Any Size</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <input type="text" placeholder="Search pets..." class="p-2 border rounded" id="search-input">
+                <button id="search-btn" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Handle the search button click
+        document.getElementById('search-btn').addEventListener('click', function () {
+            const searchInput = document.getElementById('search-input').value;
+            window.location.href = `pet-cards.html?query=${encodeURIComponent(searchInput)}`;
+        });
+
+        // Handle the browse button click to redirect to available pets
+        document.getElementById('browse-btn').addEventListener('click', function () {
+            window.location.href = 'pet-cards.html';
+        });
+    </script>
+
+</body>
+</html>
