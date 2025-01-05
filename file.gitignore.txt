@@ -1,0 +1,17 @@
+# Ignore compiled files and logs
+/target/
+/*.log
+
+# Ignore IDE configuration files
+/.idea/
+/.vscode/
+/*.iml
+
+# Ignore environment variables and sensitive files
+/application.properties
+/security.properties
+/log4j2.xml
+
+# Ignore database files
+*.sql
+*.db
